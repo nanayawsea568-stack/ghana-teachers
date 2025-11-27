@@ -1,0 +1,96 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f7fa;
+  min-height: 100vh;
+  padding-bottom: 90px;
+}
+
+/* Top Green-Blue Header */
+.top-header {
+  background: linear-gradient(135deg, #006A4E, #009688);
+  color: white;
+  padding: 25px 20px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Title Section */
+.main-title {
+  text-align: center;
+  padding: 30px 20px 10px;
+  background: white;
+}
+.main-title h2 {
+  font-size: 1.8rem;
+  color: #006A4E;
+  margin-bottom: 8px;
+}
+.main-title p { color: #666; margin-bottom: 15px; }
+.contact a { color: #25D366; font-weight: bold; }
+
+/* Colorful Cards – EXACTLY like your picture */
+.cards {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.card {
+  border-radius: 28px;
+  padding: 30px 25px;
+  color: white;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+  text-align: center;
+  background-size: cover;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.card:hover { transform: translateY(-8px); }
+
+/* Primary Card – Purple to Pink */
+.card.purple {
+  background: linear-gradient(135deg, #9C27B0, #E91E63);
+}
+
+/* JHS Card – Dark Brown */
+.card.brown {
+  background: linear-gradient(135deg, #5D4037, #8D6E63);
+}
+
+.card h3 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+.card p {
+  font-size: 1.2rem;
+  opacity: 0.95;
+  margin-bottom: 15px;
+}
+.emoji {
+  font-size: 5.5rem;
+  margin-top: 10px;
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 0;
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.1);
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.nav-item {
+  text-align: center;
+  color: #777;
+  font-size: 0.95rem;
+}
+.nav-item i { font-size: 1.7rem; display: block; margin-bottom: 5px; }
+.nav-item.active { color: #006A4E; font-weight: bold; }
